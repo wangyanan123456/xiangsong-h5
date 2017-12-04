@@ -1,0 +1,150 @@
+
+body{
+	width:1920px;
+}
+
+.box,{
+	margin: 0 auto;
+	width:1024px;
+}
+header{
+	border-bottom: 1px solid #999;
+	padding-left: 330px;
+}
+.nav{
+	display: flex;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.nav li{
+	margin-left: 30px;
+}
+.nav li div:hover{
+	border-bottom: 2px solid red;
+	padding-bottom: 20px;
+}
+.nav li:first-child{
+	width:60px;
+	height: 50px;
+	background: red;
+}
+.nav li:last-child{
+	width:110px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid red;
+	border-radius: 30px;
+	margin-left: 570px;
+	margin-top: 10px;
+}
+.banner img{
+	width: 100%;
+	height: 400px;
+}
+.swiper-container {
+    width: 100%;
+    height:400px;
+}  
+.swiper-slide{
+    width: 100%;
+    height: 400px;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+} 
+.show{
+	font-size: 26px;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+.title{
+	width:100%;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+	color: #999;
+}
+.showImg{
+	display: flex;
+	justify-content: space-between; 
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.showImg img{
+	width: 22%;
+	height: 150px;
+    box-shadow: 0 0 20px #999;
+}
+.check{
+	width:200px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 30px;
+	border:1px solid red;
+	font-size: 18px;
+	text-align: center;
+	margin:0 auto;
+}
+.two h1{
+	margin: 0 auto;
+	width:1024px;
+	background: red;
+	height: 20px;
+	text-align: center;
+}
+footer{
+	width:1920px;
+	height: 300px;
+	background: pink;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+.last{
+	width:1024px;
+	margin: 0 auto;
+	border-bottom: 2px solid red;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.last ul{
+	display: flex;
+}
+.xiangsong{
+	width:50px;
+	height: 50px;
+	background: red;
+	margin-right: 50px;
+}
+.server{
+	width:250px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between; 
+	font-size: 16px;
+	flex-wrap:wrap;
+}
+.tell{
+	font-size: 16px;
+	margin-left: 400px;
+	
+}
+.kefu{
+	margin-bottom: 10px;
+}
+.tell img{
+	background: red;
+	width:40px;
+	height: 40px;
+	display: inline-block;
+}
+.ip{
+	width:1024px;
+	margin: 0 auto;
+	text-align: center;
+}
