@@ -1,6 +1,6 @@
 window.onload = function() {
     console.log(88)
-  var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.swiper-container', {
         //上下 
         // direction:'vertical',
         direction: 'horizontal',
@@ -18,6 +18,36 @@ window.onload = function() {
         //如果需要滚动条
         // scrollbar:'.swiper-scrollbar'
     })
+
+    $('.shouye').click(function(){
+        console.log(676)
+        $('.box').css("display","block")
+        $('.two').css("display","none")
+        $('.joinme').css("display","none")
+        $('.shouye div').addClass('hover')
+        $('.aboutsong div').removeClass('hover')
+        $('.join div').removeClass('hover')
+    })
+    $('.aboutsong').click(function(){
+        console.log(676)
+        $('.box').css("display","none")
+        $('.joinme').css("display","none")
+        $('.two').css("display","block")
+        $('.aboutsong div').addClass('hover')
+        $('.shouye div').removeClass('hover')
+        $('.join div').removeClass('hover')
+    })
+    $('.join').click(function(){
+        console.log(676)
+        $('.box').css("display","none")
+        $('.joinme').css("display","block")
+        $('.two').css("display","none")
+        $('.aboutsong div').removeClass('hover')
+        $('.shouye div').removeClass('hover')
+        $('.join div').addClass('hover')
+    })
+
+
 
 
 }

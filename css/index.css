@@ -3,7 +3,7 @@ body{
 	width:1920px;
 }
 
-.box,{
+.box{
 	margin: 0 auto;
 	width:1024px;
 }
@@ -22,7 +22,7 @@ header{
 .nav li{
 	margin-left: 30px;
 }
-.nav li div:hover{
+.hover{
 	border-bottom: 2px solid red;
 	padding-bottom: 20px;
 }
@@ -41,13 +41,11 @@ header{
 	margin-left: 570px;
 	margin-top: 10px;
 }
-.banner img{
-	width: 100%;
-	height: 400px;
-}
+
 .swiper-container {
     width: 100%;
     height:400px;
+    margin-top: 1px;
 }  
 .swiper-slide{
     width: 100%;
@@ -91,12 +89,67 @@ header{
 	text-align: center;
 	margin:0 auto;
 }
-.two h1{
+.two{
 	margin: 0 auto;
 	width:1024px;
-	background: red;
-	height: 20px;
 	text-align: center;
+	margin-top: 50px;
+}
+.aboutXiang{
+	font-size: 32px;
+	font-weight: bold;
+}
+.giveYou{
+	font-size: 26px;
+	color: #999;
+	text-align: center;
+	margin-top: 10px;
+}
+.detail{
+	text-align: left;
+	margin-top: 30px;
+}
+h3{
+	font-size: 18px;
+	border-left: 2px solid red;
+	padding-left: 10px;
+}
+.miaoshu{
+	font-size: 18px;
+	margin-top: 30px;
+	color:#999;
+}
+.name{
+	color: red;
+	font-weight: bold;
+}
+.biaoti{
+	font-size: 18px;
+	color: #666;
+	margin-top: 30px;
+	font-weight: bold;
+}
+.joinme{
+	margin-top: 1px;
+}
+.joinme>img{
+	margin-bottom: 50px;
+}
+.zhaopin{
+	width:1024px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between; 
+}
+.one{
+	font-size: 20px;
+}
+.zhaopin li:not(.one){
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	/*background: red;*/
+	
 }
 footer{
 	width:1920px;
