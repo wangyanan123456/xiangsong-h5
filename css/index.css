@@ -51,19 +51,49 @@ header{
 .nav li:last-child:hover .app{
 	display: block;
 }
-.swiper-container {
-    width: 100%;
-    height:400px;
-    margin-top: 1px;
-}  
-.swiper-slide{
-    width: 100%;
-    height: 400px;
+.wrap{
+	width: 1024px;
+	height: 400px;
+	background-color: pink;
+	position: relative;
+	overflow: hidden;
+	margin-top: 20px;
 }
-.swiper-slide img{
-    width: 100%;
-    height: 100%;
-} 
+ .wrap li{
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: red;
+	margin-right: 10px;
+
+}
+.wrap ul{
+	position: absolute;
+	right: 450px;
+	bottom: 10px;	
+	display: flex;
+}
+	
+/*卷轴的样式*/
+#middle{
+	height: 400px;
+	/*卷轴的宽度是由图片的张数和轮播图的宽度共同决定的*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition:all 0.5s;
+	transition: all 0.5s;
+}
+	/*给展示的图片加样式*/
+#middle>img{
+	width: 1024px;
+}
 .show{
 	font-size: 26px;
 	width: 100%;

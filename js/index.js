@@ -1,26 +1,79 @@
 window.onload = function() {
-    console.log(88)
-    var mySwiper = new Swiper ('.swiper-container', {
-        //上下 
-        // direction:'vertical',
-        direction: 'horizontal',
-        // 是否 循环
-        loop:true,
-        autoplay: 1000,
-        autoplayDisableOnInteraction : false,
-        // grabCursor: true,
-        // paginationClickable: true,
-        // 如果需要 分页器
-        pagination:'.swiper-pagination',
-        // 如果需要前进后退按钮
-        nextButton:".swiper-button-next",
-        prevButton:".swiper-button-prev",
-        //如果需要滚动条
-        // scrollbar:'.swiper-scrollbar'
-    })
+   var $wrap =$(".wrap");
+        var $last = $("#last");
+        var $next = $("#next");
+        var $lis = $(".wrap li");
+        var $imgs = $(".wrap img");
+        var $middle = $("#middle");
 
+        var $w = $wrap.width();
+        $middle.width($w*$imgs.length);
+        var index = 0;
+
+        function creatFn(){
+            index++
+            if(index>$imgs.length-1){
+                index=0;
+            };
+            var $left = index*$w *-1;
+            $middle.css("left",$left);
+            chnageLi(index)
+        };
+
+        function chnageLi(num){
+            for( var i=0;i<$lis.length;i++){
+                $($lis[i]).css("background-color","red");
+            }
+            $($lis[num]).css("background-color","yellow");
+        };
+        
+        var timer = setInterval(creatFn,2000);
+
+        function clear(){
+            clearInterval(timer);
+            timer = setInterval(creatFn,2000);
+        };
+        
+        $next.on('click',function(){
+            creatFn();
+            clear();
+        });
+        
+        $last.on("click",function(){
+            index--
+            if(index<0){
+                index = $imgs.length-1;
+            }
+            var $left = $w * index * -1;
+            $middle.css("left",$left);
+            chnageLi(index);
+            clear();
+        })
+        
+        for(var i=0;i<$lis.length;i++){
+            
+            (function(num){
+
+                $($lis[i]).on("mouseover",function(){
+                    index = num;
+                    var $left = $w*index*-1;
+                    $middle.css("left",$left)
+                    clear();
+                    chnageLi(num);
+                });
+            
+            })(i);
+        }
+    
+        $wrap.on("mouseover",function(){
+            clearInterval(timer);
+        })
+        
+        $wrap.on("mouseout",function(){
+            clear();
+        })
+        
     $('.shouye').click(function(){
-        console.log(676)
         $('.box').css("display","block")
         $('.two').css("display","none")
         $('.joinme').css("display","none")
@@ -29,7 +82,6 @@ window.onload = function() {
         $('.join div').removeClass('hover')
     })
     $('.aboutsong').click(function(){
-        console.log(676)
         $('.box').css("display","none")
         $('.joinme').css("display","none")
         $('.two').css("display","block")
@@ -38,7 +90,6 @@ window.onload = function() {
         $('.join div').removeClass('hover')
     })
     $('.join').click(function(){
-        console.log(676)
         $('.box').css("display","none")
         $('.joinme').css("display","block")
         $('.two').css("display","none")
@@ -46,9 +97,6 @@ window.onload = function() {
         $('.shouye div').removeClass('hover')
         $('.join div').addClass('hover')
     })
-
-
-
 
 }
 

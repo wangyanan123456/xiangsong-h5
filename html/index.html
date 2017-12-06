@@ -5,7 +5,6 @@
 	<title>香送官网</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
-	<link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
 </head>
 <body>
 	<header>
@@ -31,22 +30,25 @@
 	</header>
 	<!-- 首页 -->
 	<div class="box" >
-		<div class="swiper-container">
-	        <div class="swiper-wrapper">
-	            <div class="swiper-slide"><img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"/></div>
-	            <div class="swiper-slide"><img src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg" alt=""></div>
-	            <div class="swiper-slide"><img src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" alt=""></div>
-	        </div>
-	        <!-- 如果需要分页器 -->
-	        <div class="swiper-pagination"></div>
-	        
-	        <!-- 如果需要导航按钮 -->
-	        <div class="swiper-button-prev"></div>
-	        <div class="swiper-button-next"></div>
-	        
-	        <!-- 如果需要滚动条 -->
-	        <!-- <div class="swiper-scrollbar"></div> -->
-    	</div>
+    	<div class="wrap"> 
+	
+		<!-- 用来盛放轮播图的卷轴 -->
+
+			<div id="middle">
+				<img  class="" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg">
+				<img src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg">
+				<img src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg">
+				<img src="http://img14.360buyimg.com/babel/jfs/t16459/44/47097110/60936/4962e27d/5a263cc6N17fb0a5e.jpg">
+				
+			</div>
+			<ul>
+				<li style="background:yellow"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+		</div> 
 		<p class="show">新品展示</p>
 		<p class="title">我是这个段落小标题</p>
 		<div class="showImg">
@@ -107,11 +109,6 @@
 	<div class="joinme" style="display: none" >
 		<img src="../img/zhaopin.png">
 		<div class="zhaopin">
-			<!-- <div>职位名称</div>
-			<div>职位类型</div>
-			<div>所属部门</div>
-			<div>地点</div>
-			<div>更新时间</div> -->
 			<ul>
 				<li class="one">职位名称</li>
 				<li>产品运营</li>
@@ -208,5 +205,4 @@
 </body>
 <script src="../js/jquery.js"></script>
 <script src="../js/index.js"></script>
-<script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
 </html>
