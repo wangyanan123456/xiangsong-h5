@@ -75,7 +75,7 @@ window.onload = function() {
         
     $('.shouye').click(function(){
         $('.box').css("display","block")
-        $('.two').css("display","none")
+        $('.guanyu').css("display","none")
         $('.joinme').css("display","none")
         $('.shouye div').addClass('hover')
         $('.aboutsong div').removeClass('hover')
@@ -84,7 +84,7 @@ window.onload = function() {
     $('.aboutsong').click(function(){
         $('.box').css("display","none")
         $('.joinme').css("display","none")
-        $('.two').css("display","block")
+        $('.guanyu').css("display","block")
         $('.aboutsong div').addClass('hover')
         $('.shouye div').removeClass('hover')
         $('.join div').removeClass('hover')
@@ -92,7 +92,7 @@ window.onload = function() {
     $('.join').click(function(){
         $('.box').css("display","none")
         $('.joinme').css("display","block")
-        $('.two').css("display","none")
+        $('.guanyu').css("display","none")
         $('.aboutsong div').removeClass('hover')
         $('.shouye div').removeClass('hover')
         $('.join div').addClass('hover')
