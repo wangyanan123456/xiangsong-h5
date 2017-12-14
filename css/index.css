@@ -3,8 +3,15 @@ body{
 }
 
 header{
+	width:1500px;
 	padding-left: 415px;
 	margin: 0 auto;
+	position: relative;
+}
+.app{
+	position: fixed;
+	right:80px;
+	top:150px;
 }
 .nav{
 	display: flex;
@@ -75,7 +82,7 @@ header{
 }
 .newShow{
 	display:flex;
-	width:100%;
+	width:1090px;
 	padding-left: 830px;
 	text-align: center;
 	margin-top: 50px;
@@ -114,32 +121,46 @@ header{
 	margin-right: 141px;
 
 }
+.bac{
+	width:310px;
+	height: 500px;
+	background: url(../img/bac.png) no-repeat;
+}
 .showDetail{
-	width:306px;
+	width:299px;
 	height: 146px;
 	text-align: center;
-	background: #fff;
-	border:1px solid #fff;
+	/*background: #fff;*/
+	/*border:1px solid #fff;*/
 }
 .hotBuy{
 	display: flex;
 	padding-left: 360px;
 }
-.hotBuy img{
-	border:1px solid #fff;
+
+.bac1{
+	background: url(../img/bac.png) no-repeat;
+	height: 507px;
+	/*border:1px solid red;*/
+}
+.bac2{
+	background: url(../img/bac2.png) no-repeat;
+	height: 274px;
+	width: 780px;
 }
 .hotDetail{
 	width: 390px;
-	height: 112px;
-	background: #fff;
+	/*height: 112px;*/
+	/*background: #fff;*/
 	text-align: center;
 	border:1px solid #fff;
 }
 .hotRight li{
 	display: flex;
+	margin-left: 35px;
 }
 .hotRight li:first-child{
-	margin-bottom: 45px;
+	/*margin-bottom: 45px;*/
 }
 .hotRight li div:first-child{
 	text-align: center;
@@ -147,9 +168,6 @@ header{
 	width: 280px;
 	height: 220px;
 	background: #fff;
-}
-.hotRight li div:last-child{
-	/*box-shadow:0px 10px 5px #999;*/
 }
 .biaoqian{
 	display: flex;
@@ -173,10 +191,6 @@ header{
 	font-size: 14px;
 	color:#666;
 }
-
-
-
-
 .guanyu{
 	margin: 0 auto;
 	/*position: relative;*/
@@ -184,16 +198,23 @@ header{
 .section{
 	width:1040px;
 	margin: 0 auto;
-	border:1px solid red;
+	border:2px solid #eee;
+	border-radius: 5px;
 	padding-left: 82px;
 	padding-right: 79px;
 	/*position: absolute;*/
 	top:160px;
 	background: #fff;
 	margin-top: -120px;
+	padding-bottom: 35px;
 }
 .banner2{
 	background: url(../img/top.png)  no-repeat;
+	width:100%;
+	height: 380px;
+}
+.banner1{
+	background: url(../img/join.png)  no-repeat;
 	width:100%;
 	height: 380px;
 }
@@ -205,10 +226,17 @@ header{
 	color: #770A10;
 	font-size: 30px;
 }
-.aboutXiang p:last-child{
+.aboutXiang p:nth-of-type(2){
 	color: #770A10;
 	font-size: 26px;
 	margin-bottom: 25px;
+}
+.aboutXiang  div{
+	font-size: 24px;
+	color: #1e1e1e;
+	margin-top: -10px;
+	margin-bottom: 15px;
+
 }
 .stars{
 	margin-top: 30px;
@@ -226,19 +254,23 @@ header{
 	margin-left: 24px;
 }
 .li_div div{
-	font-size: 24px;
+	font-size: 22px;
 	color:#1E1E1E;
 	margin-bottom: 15px;
+	margin-top: 38px;
 }
 .li_div p{
-	font-size: 18px;
+	font-size: 15px;
 	color: #666;
 	width: 494px;
-	line-height: 28px;
+	line-height: 20px;
 }
 .ren li{
 	display: flex;
-	margin-top: 33px;
+	margin-top: 30px;
+}
+.ren li:first-child{
+	margin-top: 50px;
 }
 .contact{
 	font-size: 28px;
@@ -251,35 +283,95 @@ header{
 	color: #666;
 	line-height: 25px;
 }
-.lastKefu{
-	margin-bottom: 32px;
+.custom_box{
+	width:1200px;
+	margin: 80px auto;
+	/*border:1px solid red;*/
 }
-.joinme{
-	margin-top: 1px;
+.small img{	
+	margin: 0 auto;
 }
-.joinme>img{
-	margin-bottom: 50px;
+.yuan{
+	font-size: 26px;
+	color: #B57F43;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:15px;
 }
-.zhaopin{
-	width:1024px;
-	margin:0 auto;
-	display: flex;
-	justify-content: space-between; 
-}
-.one{
+.jianchi{
 	font-size: 20px;
-}
-.zhaopin li:not(.one){
-	font-size: 16px;
-	height: 50px;
-	line-height: 50px;
+	color: #B57F43;
+	text-align: center;
 	
+	line-height: 28px;
 }
+.wei{
+	display: flex;
+	padding-left: 85px;
+	margin-top: 40px;
+	padding-right: 6px;
+}
+.wei li{
+	margin-right: 74px;
+}
+
+
+
+
+
+
+
+
+
+
+.pin{
+	display: flex;
+	flex-wrap:wrap;
+}
+.pin li{
+	width: 540px;
+	height: 820px;
+	padding-top: 30px;
+}
+.pin li>div{
+	width:500px;
+	margin: 0 auto;
+}
+.section2{
+	width: 1100px;
+	border:1px solid #eee;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+.job{
+	font-size: 24px;
+	color: #1e1e1e;
+	margin-bottom: 15px;
+}
+.yaoqiu{
+	font-size: 20px;
+	color: #666;
+}
+.gangwei{
+	font-size: 20px;
+	color: #1e1e1e;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+.pin p{
+	font-size: 14px;
+	color: #666;
+	line-height: 28px;
+}
+
+
+
 footer{
 	
 	height: 300px;
 	background:#292929;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 .last{
 	padding-top: 30px;
