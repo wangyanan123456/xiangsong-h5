@@ -78,6 +78,7 @@ window.onload = function() {
         $('body div:first-child').removeClass('block')
         $('.close').css('display','none')
         $('.app').css('display','block')
+        $('.know').css('display','none')
     })
         
     $('.shouye').click(function(){
@@ -89,6 +90,7 @@ window.onload = function() {
         $('.shouye div').addClass('hover')
         $('.aboutsong div').removeClass('hover')
         $('.join div').removeClass('hover')
+         $('.range_song').css('display','none')
     })
     $('.aboutsong').click(function(){
         $('.box').css("display","none")
@@ -99,6 +101,8 @@ window.onload = function() {
         $('.aboutsong div').addClass('hover')
         $('.shouye div').removeClass('hover')
         $('.join div').removeClass('hover')
+         $('.range_song').css('display','none')
+          $('.range_song').css('display','none')
     })
     $('.koubei').click(function(){
         $('.box').css("display","none")
@@ -109,6 +113,7 @@ window.onload = function() {
         $('.shouye div').removeClass('hover')
         $('.join div').removeClass('hover')
         $('.koubei div').addClass('hover')
+         $('.range_song').css('display','none')
     })
     $('.join').click(function(){
         $('.box').css("display","none")
@@ -119,6 +124,18 @@ window.onload = function() {
         $('.aboutsong div').removeClass('hover')
         $('.shouye div').removeClass('hover')
         $('.join div').addClass('hover')
+        $('.range_song').css('display','none')
+    })
+    $('.range').click(function(){
+        $('.range_song').css('display','block')
+        $('.box').css("display","none")
+        $('.joinme').css("display","none")
+        $('.guanyu').css("display","none")
+        $('.custome').css('display','none')
+        $('.koubei div').removeClass('hover')
+        $('.aboutsong div').removeClass('hover')
+        $('.shouye div').removeClass('hover')
+        $('.join div').removeClass('hover')
     })
 
 }
