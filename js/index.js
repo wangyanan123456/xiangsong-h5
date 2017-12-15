@@ -72,6 +72,13 @@ window.onload = function() {
         $wrap.on("mouseout",function(){
             clear();
         })
+
+    $('.know').click(function(){
+        $('.box div:first-child').removeClass('zhezhao')
+        $('body div:first-child').removeClass('block')
+        $('.close').css('display','none')
+        $('.app').css('display','block')
+    })
         
     $('.shouye').click(function(){
         $('.box').css("display","block")
