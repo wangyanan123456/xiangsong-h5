@@ -43,5 +43,5 @@ gulp.task('minifyimg', () =>
     gulp
         .src('img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/img'))
 );
