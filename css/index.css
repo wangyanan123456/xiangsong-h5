@@ -53,6 +53,7 @@ header{
 	line-height: 0.16rem;
 	margin-left: 5.92rem;
 	margin-top: 0.18rem;
+	/*background: red;*/
 }
 .block{
 	background: #000;
@@ -227,6 +228,7 @@ header{
 	color:#666;
 	font-size:0.06rem;
 	margin-top:0.08rem;
+	color: #400A08;
 }
 .hotDetail{
 	height: 0.54rem;
